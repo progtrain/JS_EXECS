@@ -2,7 +2,9 @@
 var checkButton = document.getElementById("checkPalindrome");
 
 function isPalindrome(str) {
- //code
+	str = str.toLowerCase();
+	var str2 = str.split("").reverse().join("");
+	return str===str2; //un strictement égale
 }
 
 checkButton.addEventListener("click", function() {
